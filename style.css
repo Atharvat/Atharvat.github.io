@@ -41,6 +41,7 @@
   left: 2rem;
   height: 42px;
   width: 82px;
+  z-index: 2;
 }
 
 #theme_switch:hover{
