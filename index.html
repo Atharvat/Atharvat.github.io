@@ -1,7 +1,321 @@
 <!DOCTYPE html>
-<html>
-    <head></head>
-    <body>
-        Hello this is my personal webpage.
-    </body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="public/coding2.svg" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ms+Madi&family=Oooh+Baby&family=Roboto:wght@300&family=Rubik&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atharva Tagalpallewar</title>
+  </head>
+  <body>
+    <div id="header">
+      <div id="theme_switch" >
+        <img id="theme_switch_bg" class="change_dark_img" src="public/slider_bg.svg"/>
+        <img id="light_theme_img" class="change_dark_img" src="public/day.svg"/>
+        <img id="dark_theme_img" class="change_dark_img" src="public/night.svg"/>
+        <img id="theme_switch_circle" class="change_dark_img" src="public/circle.svg"/>
+      </div>
+      <div id="header_links">
+        <div class="header_link"><a href="#projects_section">Projects</a></div>
+        <div class="header_link"><a href="#skills_section">Skills</a></div>
+        <div class="header_link"><a href="#contact_section">Contact</a></div>
+      </div>
+    </div>
+    <div id="home_section">
+      <div id="home_section_center">
+        <div id="hello_text">Hello there  👋</div>
+        <div id="name_text">I'm Atharva Tagalpallewar</div>
+        <div id= "info">
+          <div class="info_line">App and Web Developer</div>
+          <div class="info_line">ML Enthusiast</div>
+          <div class="info_line">Student at IIT Guwahati</div>
+        </div>
+      </div>
+      <a href="#projects_section" style="display:block" id="home_link_below">
+        <div>View my projects</div>
+        <img class="arrow_down change_dark_img" src="public/down.svg"/>
+      </a>
+    </div>
+
+    <div id="projects_section">
+      <div class="heading">
+        <div class="heading_text">Projects</div>
+        <hr class="heading_line">
+      </div>
+
+      <div id="projects_container">
+        <div class="project">
+          <div class="project_details">
+            <div class="project_title">Alcheringa App</div>
+            <div class="project_desc">
+            The official Android application for the annual cultural festival of IIT Guwahati with 3000+ downloads and 5.0 star rating. <br>
+            It has features like creating a personalized schedule, generating e-passes for the attendees, custom animations, multi-threading, a companion app for executives and a complete e-commerce experience to buy merchandise.
+            </div>
+            <div class="project_skills">
+              <img class="project_skill" src="public/android.svg"/>
+              <img class="project_skill" src="public/kotlin.svg"/>
+              <img class="project_skill" src="public/firebase.svg"/>
+              <img class="project_skill" src="public/sqlite.svg"/>
+              <img class="project_skill" src="public/compose.png"/>
+            </div>
+            <div class="project_links">
+              <div class="project_link_cont">
+                <a class="project_link" href="https://play.google.com/store/apps/details?id=com.alcheringa.alcheringa2022" target="_blank">Play Store</a>
+              </div>
+            </div>
+          </div>
+          <img class="project_image_subsection" src="public/alcheringa.png"/>
+        </div>
+
+        <div class="project">
+          <img class="project_image_subsection" src="public/jee_website.png"/>
+          <div class="project_details">
+            <div class="project_title">OCR Questions Scanner & Exam Website</div>
+            <div class="project_desc">
+              An Android app to scan multiple questions from a paper and store them in a database
+              and an online examination web interface allowing students to attempt the questions scanned from the app.            </div>
+            <div class="project_skills">
+              <img class="project_skill" src="public/react.svg"/>
+              <img class="project_skill" src="public/javascript.svg"/>
+              <img class="project_skill" src="public/android.svg"/>
+              <img class="project_skill" src="public/java.svg"/>
+              <img class="project_skill" src="public/firebase.svg"/>
+              
+            </div>
+            <div class="project_links">
+              <div class="project_link_cont">
+                <a class="project_link" href="https://atharvat.me/JEE-Simulation-Website/" target="_blank">Visit Website</a>
+              </div>
+              <div class="project_link_cont">
+                <a class="project_link" href="https://github.com/Atharvat/Questions_OCR_App" target="_blank">Github</a>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+
+        <div class="project">
+          <div class="project_details">
+            <div class="project_title">Price Comparison App</div>
+            <div class="project_desc">
+              A full-stack Android application to fetch and compare product-data from various
+              e-commerce websites using web-scraping and various e-commerce APIs like Amazon and Flipkart.
+            </div>
+            <div class="project_skills">
+              <img class="project_skill" src="public/android.svg"/>
+              <img class="project_skill" src="public/java.svg"/>
+              <img class="project_skill" src="public/kotlin.svg"/>
+              
+            </div>
+            <div class="project_links">
+              <!-- <div class="project_link_cont">
+                <a class="project_link" href="" target="_blank">Visit Website</a>
+              </div>
+              <div class="project_link_cont">
+                <a class="project_link" href="" target="_blank">Play Store</a>
+              </div> -->
+              <div class="project_link_cont">
+                <a class="project_link" href="https://github.com/Atharvat/All-in-one-Shopping" target="_blank">Github</a>
+              </div>
+            </div>
+          </div>
+          <img class="project_image_subsection" src="public/coming_soon.png"/>
+        </div>
+
+        <div class="project">
+          <img class="project_image_subsection" src="public/math2tex.png"/>
+          <div class="project_details">
+            <div class="project_title">Math-2-Tex</div>
+            <div class="project_desc">
+              A web application to convert mathematical equations to LaTeX format using an Encoder-Decoder Attention based ML model.
+            </div>
+            <div class="project_skills">
+              <img class="project_skill" src="public/python.svg"/>
+              <img class="project_skill" src="public/pytorch.svg"/>
+              <img class="project_skill" src="public/flask.png"/>
+              <img class="project_skill" src="public/javascript.svg"/>
+              
+            </div>
+            <div class="project_links">
+              <div class="project_link_cont">
+                <a class="project_link" href="https://github.com/Umang1815/Math-2-Tex" target="_blank">Github</a>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+
+      </div>
+      <a href="#skills_section" style="display:block" id="projects_link_below">
+        <div>My skills</div>
+        <img  class="arrow_down change_dark_img" src="public/down.svg"/>
+      </a>
+    </div>
+
+    <div id="skills_section">
+      <div class="heading">
+        <div class="heading_text">Skills</div>
+        <hr class="heading_line">
+      </div>
+      <div class="skills_subsection">
+        <div class="skills_subsection_title">Web Development</div>
+        
+        <div class="skills_cont">
+          
+          <div class="skill">
+            <img class="skill_img" src="public/react.svg"/>
+            <div class="skill_text">React</div>
+          </div>
+          <div class="skill">
+            <img class="skill_img" src="public/nodejs.svg"/>
+            <div class="skill_text">Node.js</div>
+          </div>
+          
+          <div class="skill">
+            <img class="skill_img change_dark_img" src="public/nextjs.svg"/>
+            <div class="skill_text">Next.js</div>
+          </div>
+          <div class="skill">
+            <img class="skill_img" src="public/html.svg"/>
+            <div class="skill_text">HTML</div>
+          </div>
+          <div class="skill">
+            <img class="skill_img" src="public/css.svg"/>
+            <div class="skill_text">CSS</div>
+          </div>
+          <div class="skill">
+            <img class="skill_img" src="public/javascript.svg"/>
+            <div class="skill_text">Javascript</div>
+          </div>
+          <div class="skill">
+            <img class="skill_img change_dark_img" src="public/sass.svg"/>
+            <div class="skill_text">Sass</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skills_subsection">
+        <div class="skills_cont" style="justify-content: flex-end;">
+          <div class="skill">
+            <img class="skill_img" src="public/android.svg"/>
+            <div class="skill_text">Android Native</div>
+          </div>
+          <div class="skill">
+            <img class="skill_img" src="public/kotlin.svg"/>
+            <div class="skill_text">Kotlin</div>
+          </div>
+          <div class="skill">
+            <img class="skill_img" src="public/java.svg"/>
+            <div class="skill_text">Java</div>
+          </div>
+          <div class="skill">
+            <img class="skill_img" src="public/compose.png"/>
+            <div class="skill_text">Jetpack Compose</div>
+          </div>
+          <div class="skill">
+            <img class="skill_img" src="public/flutter.svg"/>
+            <div class="skill_text">Flutter</div>
+          </div>
+          <div class="skill">
+            <img class="skill_img" src="public/dart.svg"/>
+            <div class="skill_text">Dart</div>
+          </div>
+        </div>
+        <div class="skills_subsection_title">App Development</div>
+      </div>
+
+      <div class="skills_subsection">
+        <div class="skills_subsection_title">Database and Misc.</div>
+        
+        <div class="skills_cont">
+          
+          <div class="skill">
+            <img class="skill_img" src="public/firebase.svg"/>
+            <div class="skill_text">Firebase</div>
+          </div>
+          <div class="skill">
+            <img class="skill_img" src="public/mongodb.svg"/>
+            <div class="skill_text">MongoDB</div>
+          </div>
+          <div class="skill">
+            <img class="skill_img" src="public/mysql.svg"/>
+            <div class="skill_text">MySQL</div>
+          </div>
+          <div class="skill">
+            <img class="skill_img" src="public/sqlite.svg"/>
+            <div class="skill_text">SQLite</div>
+          </div>
+                    
+          <div class="skill">
+            <img class="skill_img" src="public/git.svg"/>
+            <div class="skill_text">Git</div>
+          </div>
+          <div class="skill">
+            <img class="skill_img" src="public/c.svg"/>
+            <div class="skill_text">C</div>
+          </div>
+          <div class="skill">
+            <img class="skill_img" src="public/cpp.svg"/>
+            <div class="skill_text">C++</div>
+          </div>
+          <div class="skill">
+            <img class="skill_img" src="public/matlab.svg"/>
+            <div class="skill_text">MATLAB</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skills_subsection">
+        <div class="skills_cont" style="justify-content: flex-end;">
+          <div class="skill">
+            <img class="skill_img" src="public/python.svg"/>
+            <div class="skill_text">Python</div>
+          </div>
+          <div class="skill">
+            <img class="skill_img" src="public/pytorch.svg"/>
+            <div class="skill_text">Pytorch</div>
+          </div>
+          <div class="skill">
+            <img class="skill_img" src="public/tensorflow.svg"/>
+            <div class="skill_text">Tensorflow</div>
+          </div>
+          <div class="skill">
+            <img class="skill_img change_dark_img" src="public/keras.svg"/>
+            <div class="skill_text">Keras</div>
+          </div>
+          <div class="skill">
+            <img class="skill_img" src="public/opencv.svg"/>
+            <div class="skill_text">OpenCV</div>
+          </div>
+        </div>
+        <div class="skills_subsection_title">Machine Learning</div>
+      </div>
+      
+    </div>
+
+    <div id="contact_section">
+      <div id="contact_heading">Get in Touch</div>
+      <div id="contact_details">
+        <div class="contact_detail">
+          <a href="mailto:p.tagalpallewar.iitg.ac.in">
+            <img class="contact_detail_img change_dark_img" src="public/Mail.png"/>
+          </a> 
+        </div>
+        <div class="contact_detail">
+          <a href="https://www.linkedin.com/in/atharva-tagalpallewar/" target="_blank">
+            <img class="contact_detail_img" src="public/linkedin.svg"/>
+          </a>
+        </div>
+        <div class="contact_detail">
+          <a href="https://github.com/Atharvat/" target="_blank">
+            <img class="contact_detail_img change_dark_img" src="public/github.svg"/>
+          </a>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
 </html>
