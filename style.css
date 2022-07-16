@@ -43,6 +43,10 @@
   width: 82px;
 }
 
+#theme_switch:hover{
+  cursor: pointer;
+}
+
  #theme_switch_bg{
   height: 100%;
   position: absolute;
